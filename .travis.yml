@@ -4,4 +4,4 @@ dist: xenial
 script:
   - make
   - make test_run
-  - git ls-files src/ | xargs clang-format -i && git diff —exit-code && make && bin/test
+  - git ls-files src/ | xargs clang-format -i && git diff --exit-code
